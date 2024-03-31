@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    color: #fff;
+    background-color: rgb(14, 14, 14);
+}
+
+
+section{
+    min-height: 100vh;
+    padding: 2rem 12% 3rem;
+}
+.header{
+    position:fixed;
+    top: 0;
+    left:  0;
+    width: 100%;
+    height: 22px;
+    padding: 2rem 9%;
+    background:rgb(44, 44, 61);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+
+}
+.logo{
+    font-size: 2.8rem;
+    color: #c4c3cb;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: default;
+    font-style: italic;
+}
+.navbar a{
+    display:inline-block;
+    font-size:1.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 3rem;
+    transition: -3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color:blue;
+}
+#menu-icon{
+   font-size: 3.6em;
+   color: rgb(198, 181, 181);
+   display: none;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family:'Cochin', Georgia, Times, 'Times New Roman', serif
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+.home-content h2{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+span{
+    color: blue;
+    font-family: cursive;
+}
+.home-content p{
+    font-size: 1.6rem;
+    font-family:Geneva, Tahoma, sans-serif
+
+}
+.home-img img{
+    width: 25vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+ @keyframes floatImage{
+    0%{
+        transform: translatey(0);
+    }
+    50%{
+        transform: translatey(-2.4rem);
+    }
+    100%{
+         transform: translatey(0);
+    }
+ }
+ .socialmedia{
+    width: 320px;
+ }
+.socialmedia a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:2rem;
+    height:2rem;
+    border-radius:50%;
+    background: transparent;
+    border:3px solid rgb(0, 64, 255);
+    font-size: 1rem;
+    color: rgb(0, 136, 255);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: -5s ease;
+}
+.socialmedia a:hover{
+    background-color: rgb(56, 78, 203);
+    color: rgb(26, 8, 87);
+    box-shadow: 0 0 1rem solid blue;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: rgb(49, 133, 224);
+    border-radius:7rem;
+    box-shadow: 0 0 1rem solid blue;
+    font-size:15px;
+    color: rgb(6, 6, 7);
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    transition: -5s ease-in-out;
+}
+.btn:hover{
+    box-shadow: 0 0 5px darkblue,
+    0 0 25px darkblue, 0 0 50px darkblue,
+    0 0 100px darkblue, 0 0 200px darkblue;
+
+}
+.btn i{
+    color: rgb(22, 15, 15);
+    
+}
+
+
+.about{
+    display:flex;
+    background-color: rgb(15, 15, 16);
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+.heading span{
+    color:violet;
+}
+.about-section h2{
+    text-align: center;
+    color: rgb(60, 147, 154);
+
+}
+.about-section p{
+    font-size: 2rem;
+    margin: 5rem 0 7rem;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+
+.Skills{
+    background-color: rgb(5, 5, 5);
+}
+.ss i{
+    font-size:10rem;
+}
+.Skills h2{
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 4.5rem;
+    color: chocolate;
+}
+.img-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap ;
+    gap: 3rem;
+}
+.img-skills .ss{
+    flex: 0.5rem;
+    background-color: rgb(7, 7, 7);
+    border-radius: 4rem;
+    text-align: center;
+    transition: -5s ease;
+}
+.img-skills:hover{
+    border-color: aqua;
+    transform: scale(1.02);
+}
+
+
+.services h2{
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    font-size: 4.rem;
+    color: rgb(60, 147, 154);
+}
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap ;
+    gap: 2rem;
+}
+.services-container .service-box{
+    flex: 2rem;
+    background-color: rgb(24, 22, 22);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid ;
+    transition: -5s ease;
+}
+.services-container .service-box:hover{
+     border-color: aqua;
+     transform: scale(1.02);
+    }
+.service-box i{
+    font-size: 6rem;
+    color: blue;
+}
+.service-box h3{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+.main-text{
+    padding-top:1rem;
+    margin-top: 200px;
+
+}
+.main-text h2{
+    font-size: 4.1rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-top: 4rem;
+    color: rgb(60, 147, 154);
+}
+.main-text h2 span{
+    color: rgb(185, 70, 182);
+}
+.project-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap:2rem;
+}
+.project-content .row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem blue;
+    cursor: pointer;
+    display: flex;
+}
+.project-content .row img{
+    width:100%;
+    transition: -5s ease;
+    opacity: 0.7;
+}
+.row:hover img{
+    transform: scale(1.1);
+}
+.row .layer{
+    width: 100%;
+    height:100%;
+    border-radius: 2rem;
+    background:linear-gradient(rgba(0,0,0,0.1),rgb(55, 73, 194));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition:-5s ease;
+}
+.layer h5{
+    color: white;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+.layer p{
+    font-size: 1.2rem;
+    line-height: 1;
+    color: rgb(231, 223, 223);
+    margin: .3rem 0 1rem;
+}
+.layer i{
+    font-size: 2rem;
+    color: rgb(22, 14, 193);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:4px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+.row:hover img{
+    transform: scale(1.1);
+}
+.row:hover .layer{
+    transform: translatey(0);
+}
+.layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: blue;
+    border-radius: 50%;
+}
+
+
+.Certificates h2{
+    font-size: 4.1rem;
+    color: rgb(60, 147, 154);
+    text-align: center;
+}
+
+.Certificates h2 span{
+    color: rgb(185, 70, 182);
+} 
+.cer-img{
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.cer-img img{
+    display: inline-flex;
+    transition: transform 0.5s;
+    display: inline-flex;
+    align-items: center;
+    width:20rem;
+    height:13rem;
+    background:transparent;
+    color: rgb(0, 136, 255);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: -5s ease;
+}
+.cer-img img:hover{
+    border: 1rem solid rgb(10, 10, 10);
+     transform: scaley(1.4);
+}
+
+
+.contact{
+    align-items:center;
+    text-align: center;
+    line-height:2;
+}
+.contact h2{
+ font-size:4.1rem;
+ color: rgb(60, 147, 154);
+ margin-top: 5rem;
+}
+.contact-text h2 span{
+    color: rgb(185, 70, 182);  
+
+}
+.contact form{
+    max-width: 75rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    background: rgb(35, 31, 31);
+    border-radius: .8rem;
+    margin: .4rem 0;
+}
+.contact form .input-box input{
+    width: 49%;
+}
+.contact form text{
+    resize: none;
+}
+.contact .btn{
+    display: inline-block;
+    padding: 1rem 2.6rem;
+    background-color: rgb(49, 133, 224);
+    border-radius:7rem;
+    box-shadow: 0 0 1rem solid blue;
+    font-size:15px;
+    color: rgb(6, 6, 7);
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 8px blue, 0 0 28px blue;
+    transition: -5s ease;
+}
+.contact form .btn:hover{
+    box-shadow: 0 0 5px darkblue,
+    0 0 25px darkblue, 0 0 50px darkblue,
+    0 0 100px darkblue, 0 0 200px darkblue;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(35, 40, 42);
+}
+.ft{
+    font-size: 1.2rem;
+}
+.footer-icon{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+padding: .5rem 1rem;
+background: rgb(37, 37, 43);
+border-radius: .8rem;
+transform: .5s ease;
+}
+.footer-icon a:hover{
+    box-shadow: 0 0 1rem rgb(43, 72, 190);
+}
+.footer-icon a i{
+    font-size: 2.0rem;
+    color: rgb(172, 172, 165);
+}
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:991px){
+    .header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3%;
+    }
+    .services{
+        padding: 7rem;
+    }
+    .projects{
+        padding-top: 7rem;
+    }
+    .contact{
+        min-height: auto;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+@media(max-width:768px){
+    #menu-icon{
+        display: block;
+    }
+    #menu{
+        width: 100%;
+        background: black;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        text-align: center;
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: rgb(215, 208, 208);
+        text-align: center;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-content{
+        order: 2;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+    .projects h2{
+        margin-bottom: 3rem;
+    }
+    .project-content{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:617px){
+    .project-content{
+        grid-template-columns: 1fr;
+    }
+    .home-img img{
+        width: 80vw;
+        margin-top: 8rem;
+    }
+
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .contact form .input-box input{
+        width: 100%;
+    }
+}
